@@ -4,8 +4,8 @@ const employeeController = require('../controllers/employeeController');
 
 router.post('/employees', employeeController.createEmployee);
 router.get('/employees', employeeController.getAllEmployees);
-router.get('/employees/:id', employeeController.getEmployeeById);
 router.get('/employees/department/:department', employeeController.getEmployeesByDepartment);
+router.get('/employees/:id', employeeController.getEmployeeById);
 router.put('/employees/:id', employeeController.updateEmployee);
 router.delete('/employees/:id', employeeController.deleteEmployee);
 
