@@ -22,6 +22,7 @@ function App() {
 
   useEffect(() => {
     filterEmployees();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [employees, departmentFilter, searchTerm]);
 
   const loadEmployees = async () => {
